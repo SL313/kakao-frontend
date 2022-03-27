@@ -53,7 +53,7 @@ const ToDoList = (): JSX.Element => {
   };
 
   const deleteList = async (id: number) => {
-    await axios.delete(`http://localhost:5000/todos/${id}`);
+    await axios.delete("http://localhost:5000/todos/${id}");
     await getToDoList();
   };
 
